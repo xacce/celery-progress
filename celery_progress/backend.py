@@ -59,7 +59,7 @@ class Progress(object):
                 'success': None,
                 'progress': self.result.info,
             }
-        elif self.result.state in ['PENDING', 'STARTED']:
+        elif self.result.state in ['PENDING', 'STARTED', 'RETRY']:
             return {
                 'complete': False,
                 'success': None,
